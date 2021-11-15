@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sidemenu.css">
+    <title>Viajes cruceros</title>
+  </head>
+  <body>
+    <div id="sidemenu" class="menu-expanded">
+      <!-- HEADER   -->
+      <div id="header">
+        <div id="title" class=""><span> Cruceros zona zona sur</span></div>
+        <div id="menu-btn">
+          <div class="btn-hamburger"></div>
+          <div class="btn-hamburger"></div>
+          <div class="btn-hamburger"></div>
+        </div>
+      </div>
+<!-- PROFILE  -->
+      <div id="profile">
+        <div id="photo"><img src="multimedia/perfil.jpg" alt=""></div>
+        <div id="name"><span>Bruni Jona</span></div>
+
+      </div>
+
+<!-- ITEM  -->
+<div id="menu-items">
+  <div class="item">
+    <a href="#">
+      <div class="icon"><img src="multimedia/barquito.png" alt=""></div>
+      <div class="title"><span>Cloud Services</span></div>
+    </a>
+  </div>
+  <div class="item.separator">
+    <div class="item">
+      <a href="#">
+        <div class="icon"><img src="multimedia/barquito.png" alt=""></div>
+        <div class="title"><span>Cloud Services</span></div>
+      </a>
+    </div>
+  </div>
+  <div class="item.separator">
+    <div class="item">
+      <a href="#">
+        <div class="icon"><img src="multimedia/barquito.png" alt=""></div>
+        <div class="title"><span>Cloud Services</span></div>
+      </a>
+    </div>
+  </div>
+  <div class="item.separator">
+    <div class="item">
+      <a href="#">
+        <div class="icon"><img src="multimedia/barquito.png" alt=""></div>
+        <div class="title"><span>Cloud Services</span></div>
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</div> <!-- este div junto con ID= sidemenu, posiblemente me traiga problemas -->
+<!-- Las imagenes de 50 px son las que se hace referencia en la guia  -->
+
+<!-- NOTE:SECCION  -->
+<section>
+
+  <div class="contenedor">
+    <img src="multimedia/crucero-hd.jpg">
+    <div class="texto1"> Cruceros Zona Sur </div>
+
+
+    <div class="texto2">
+      <button data-v-83246d5a="" title="Partnership"
+      data-msgid="Watch Video" data-current-language="es" class="btn btn-orange btn-lg" style="margin-bottom: 10px; z-index: 96;"
+      >Ver Vídeo</button>
+
+    </div>
+
+  </div>
+</section>
+
+
+<div class="icono">
+  <a href="https://wa.me/5491158880268" target="_blank"><img src="multimedia/whatsapp.png" alt="Contactate Aqui!!"></a>
+</div>
+
+
+<script>
+  const btn = document.querySelector("#menu-btn");
+  const menu = document.querySelector("#sidemenu");
+  btn.addEventListener("click" , e => {
+    menu.classList.toggle("menu-expanded");
+    menu.classList.toggle("menu-collapsed");
+
+    document.querySelector("body").classList.toggle("body-expanded")
+  })
+</script>
+  </body>
+</html>
